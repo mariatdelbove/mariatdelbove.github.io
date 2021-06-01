@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    
+   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="stile_nd.css" type="text/css">
+    <title>Negative Design</title>
+   </head>
+    
+   <body>
+       
+     <p id="heading">Gioca con il contrasto tra testo e sfondo, scopri in che modo<br/>questo rapporto influenza la chiarezza del messaggio.</p>
+       
+     <br/><br/>
+       
+     <table id="text-box-contrasto" align="center" border="2px" bordercolor="#252525">
+         <td id="text-content-contrasto">Ambarabà cì cì cò cò, tre civette sul comò<br/>
+                               che facevano l'amore con la figlia del dottore.<br/>
+                               Il dottore si ammalò,&nbsp;Ambarabà cì cì cò cò.</td>
+     </table>
+       
+     <br/><br/><br/><br/>
+       
+     <label id="label1-contrasto"><b>TESTO:</b></label> 
+     
+     <input type="range" min="0" max="359" value="0" class="range-contrasto" id="range1-contrasto" onmousemove="changeTextColor()">  
+     <input type="range" min="0" max="100" value="0" class="range-contrasto" id="range2-contrasto" onmousemove="changeTextColor()">       
+     <input type="range" min="0" max="100" value="0" class="range-contrasto" id="range3-contrasto" onmousemove="changeTextColor()">
+       
+     <br/><br/><br/>
+       
+     <label id="label2-contrasto"><b>SFONDO:</b></label> 
+     
+     <input type="range" min="0" max="359" value="0" class="range-contrasto" id="range4-contrasto" onmousemove="changeBoxColor()">  
+     <input type="range" min="0" max="100" value="0" class="range-contrasto" id="range5-contrasto" onmousemove="changeBoxColor()">         
+     <input type="range" min="0" max="100" value="0" class="rang-contrastoe" id="range6-contrasto" onmousemove="changeBoxColor()">
+       
+     <br/><br/><br/>
+       
+     <label id="label3-contrasto">Tonalità</label>  
+     <label id="label4-contrasto">Saturazione</label>  
+     <label id="label5-contrasto">Luminosità</label>
+
+     <br>
+     <script>
+                  
+       function changeTextColor() {          
+         
+       var textHue = document.body.querySelector("#range1-contrasto").value;         
+       var textSaturation = document.body.querySelector("#range2-contrasto").value;           
+       var textSaturationStr = textSaturation + "%";
+       var textLight = document.body.querySelector("#range3-contrasto").value;
+       var textLightStr = textLight + "%";
+        
+       textColorStr = "hsla(" + textHue + "," + textSaturationStr + "," + textLightStr + "," + "1.00)";
+           
+       document.body.querySelector("#text-content-contrasto").style.color = textColorStr;
+       }
+                  
+       function changeBoxColor() {          
+         
+       var boxHue = document.body.querySelector("#range4-contrasto").value;         
+       var boxSaturation = document.body.querySelector("#range5-contrasto").value;           
+       var boxSaturationStr = boxSaturation + "%";
+       var boxLight = document.body.querySelector("#range6-contrasto").value;
+       var boxLightStr = boxLight + "%";
+        
+       boxColorStr = "hsla(" + boxHue + "," + boxSaturationStr + "," + boxLightStr + "," + "1.00)";
+           
+       document.body.querySelector("#text-box-contrasto").style.backgroundColor = boxColorStr;
+       }       
+         
+       function changeRangeValue() {
+           textHue = parseFloat(document.body.querySelector("#range1-contrasto").value) + Math.floor(Math.random() * 359)
+           document.body.querySelector("#range1-contrasto").value = textHue
+           
+           textSaturation = parseFloat(document.body.querySelector("#range2-contrasto").value) + Math.floor(Math.random() * 100)
+           document.body.querySelector("#range2-contrasto").value = textSaturation
+           
+           textLight = parseFloat(document.body.querySelector("#range3-contrasto").value) + Math.floor(Math.random() * 100)
+           document.body.querySelector("#range3-contrasto").value = textLight
+           
+           textSaturationStr = textSaturation + "%";
+           textLightStr = textLight + "%";
+           textColorStr = "hsla(" + textHue + "," + textSaturationStr + "," + textLightStr + "," + "1.00)";
+           document.body.querySelector("#text-content-contrasto").style.color = textColorStr;
+           
+           boxHue = parseFloat(document.body.querySelector("#range4-contrasto").value) + Math.floor(Math.random() * 359)
+           document.body.querySelector("#range4-contrasto").value = boxHue
+           
+           boxSaturation = parseFloat(document.body.querySelector("#range5-contrasto").value) + Math.floor(Math.random() * 100)
+           document.body.querySelector("#range5-contrasto").value = boxSaturation
+           
+           boxLight = parseFloat(document.body.querySelector("#range6-contrasto").value) + Math.floor(Math.random() * 100)
+           document.body.querySelector("#range6-contrasto").value = boxLight
+           
+           boxSaturationStr = boxSaturation + "%";
+           boxLightStr = boxLight + "%";
+           boxColorStr = "hsla(" + boxHue + "," + boxSaturationStr + "," + boxLightStr + "," + "1.00)";
+           document.body.querySelector("#text-box-contrasto").style.backgroundColor = boxColorStr;
+       }
+         
+       window.onload = function() { changeTextColor(); changeBoxColor(); changeRangeValue(); }
+       
+     </script>
+   </body>
+</html>
