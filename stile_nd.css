@@ -20,11 +20,14 @@
   font-weight: 600;
 }
 
+html {
+  background-image: url("immagini/Texture_carta.png");
+  background-size: cover;
+}
+
 body {
   font-family: "Myriad Pro", "Helvetica", "Gill Sans", "Gill Sans MT", "Arial", sans-serif;
   margin: 0 auto;
-  background-image: url("immagini/Texture_carta.png");
-  background-size: cover;
   text-align: center;
   color: var(--nero);
   padding: 5em 5%;
