@@ -1,116 +1,30 @@
 <!doctype html>
 <html>
     
-   <head>       
+   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="stile_nd.css" type="text/css">
+    <title>Negative Design</title>
    </head>
     
-   <body>
-       
-       <style>
-           
-           body {
-               font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
-               text-align: center;
-               color: #252525;
-           }
-           
-           #heading {
-               font-size: 36pt;
-           }
-           
-           #text-box {               
-               border: 2px;
-               background-color: white;
-               width: 40%;
-           }
-           
-           #text-content {
-               font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
-               font-size: 28pt;
-               padding: 25px;
-               position: relative;
-               color: black;
-           }
-           
-           body>label {
-               font-size: 22px;
-               margin: 20px;
-           }
-           
-           /* The container */
-           .container {
-             display: inline;
-             position: relative;
-             padding-left: 35px;
-             margin-bottom: 12px;
-             cursor: pointer;
-             font-size: 20px;
-             -webkit-user-select: none;
-             -moz-user-select: none;
-             -ms-user-select: none;
-             user-select: none;
-           }
-
-           /* Hide the browser's default radio button */
-           .container input {
-             position: absolute;
-             opacity: 0;
-             cursor: pointer;
-           }
-
-           /* Create a custom radio button */
-           .checkmark {
-             position: absolute;
-             top: 0;
-             left: 0;
-             height: 20px;
-             width: 20px;
-             background-color: #E3E3E3;
-             border-radius: 50%;
-             -webkit-transition: 0.2s;
-             transition: opacity 0.2s;
-           }
-
-           /* On mouse-over, add a grey background color */
-           .container:hover input ~ .checkmark {
-             background-color: #CACACA;
-           }
-           
-           /* When the radio button is checked, add a yellow background */
-           .container input:checked ~ .checkmark {
-             box-shadow: 0 0 0 1px #404040;
-             background-color: #FFE000;
-           }
-
-           /* Create the indicator (the dot/circle - hidden when not checked) */
-           .checkmark:after {
-             content: "";
-             position: absolute;
-             display: none;
-           }
-
-           /* Show the indicator (dot/circle) when checked */
-           .container input:checked ~ .checkmark:after {
-             display: block;
-           }
-           
-       </style>
-       
+   <body>       
      <p id="heading">Cambia il tipo di carattere e di visualizzazione<br/>e trova la miglior soluzione di leggiblità.</p>
        
      <br/><br/>
        
-     <table id="text-box" align="center" border="2px" bordercolor="#252525">
-         <td id="text-content">Vedo un ragno nel suo regno<br/>
-                               che lavora con impegno<br/>
-                               e uno gnomo che fa il bagno<br/>
-                               con un cigno nello stagno.<br/>
+     <table id="text-box-leggibilita" align="center" border="2px" bordercolor="#1d1d1d">
+         <td id="text-content-leggibilita">Vedo un ragno nel suo regno<br/>
+                                           che lavora con impegno<br/>
+                                           e uno gnomo che fa il bagno<br/>
+                                           con un cigno nello stagno.<br/>
          </td>
      </table>
        
      <br/><br/><br/><br/><br/>
        
-     <label id="label1"><b>FONT:</b></label> 
+     <label class="label-leggibilita"><b>FONT:</b></label> 
      
      <label class="container">Sans-serif
        <input type="radio" name="group1" id="changeFont1" onclick="changeFontSansSerif()">
@@ -131,7 +45,7 @@
        
      <br/><br/><br/>
        
-     <label id="label2"><b>VISTA:</b></label> 
+     <label class="label-leggibilita"><b>VISTA:</b></label> 
      
      <label class="container">Positiva
        <input type="radio" name="group2" id="changeView1" onclick="changeViewPositive()">
@@ -154,49 +68,49 @@
                   
        function changeFontSansSerif() {           
            var sansSerif = "Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, sans-serif"
-           document.body.querySelector("#text-content").style.fontFamily = sansSerif
+           document.body.querySelector("#text-content-leggibilita").style.fontFamily = sansSerif
        }
          
        function changeFontSerif() {           
            var serif = "Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif"
-           document.body.querySelector("#text-content").style.fontFamily = serif
+           document.body.querySelector("#text-content-leggibilita").style.fontFamily = serif
        }
          
        function changeFontMonospace() {           
            var monospace = "Courier New, Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, monospace"
-           document.body.querySelector("#text-content").style.fontFamily = monospace
+           document.body.querySelector("#text-content-leggibilita").style.fontFamily = monospace
        }
          
        function changeFontCursive() {           
            var cursive = "Edwardian Script ITC, Brush Script MT, Lucida Calligraphy, Lucida Handwriting, cursive"
-           document.body.querySelector("#text-content").style.fontFamily = cursive
+           document.body.querySelector("#text-content-leggibilita").style.fontFamily = cursive
        }
          
        function changeViewPositive() {
-           var bianco = "#FFFFFF"
-           var grigio = "#252525"
+           var bianco = "#FFFCF5"
+           var nero = "#1d1d1d"
            document.body.querySelector("#text-box").style.backgroundColor = bianco
-           document.body.querySelector("#text-content").style.color = grigio
+           document.body.querySelector("#text-content").style.color = nero
        }
          
        function changeViewColorPositive() {
            var giallo = "#FFE000"
-           var grigio = "#252525"
+           var nero = "#1d1d1d"
            document.body.querySelector("#text-box").style.backgroundColor = giallo
-           document.body.querySelector("#text-content").style.color = grigio
+           document.body.querySelector("#text-content").style.color = nero
        }
          
        function changeViewNegative() {
-           var grigio = "#252525"
-           var bianco = "#FFFFFF"
-           document.body.querySelector("#text-box").style.backgroundColor = grigio
+           var nero = "#1d1d1d"
+           var bianco = "#FFFCF5"
+           document.body.querySelector("#text-box").style.backgroundColor = nero
            document.body.querySelector("#text-content").style.color = bianco
        }
          
        function changeViewColorNegative() {
-           var grigio = "#252525"
+           var nero = "#1d1d1d"
            var giallo = "#FFE000"
-           document.body.querySelector("#text-box").style.backgroundColor = grigio
+           document.body.querySelector("#text-box").style.backgroundColor = nero
            document.body.querySelector("#text-content").style.color = giallo
        }
          
