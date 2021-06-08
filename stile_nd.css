@@ -144,7 +144,7 @@ nav li:hover {
 .contenitore {
     margin: 2em;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -196,7 +196,7 @@ nav li:hover {
 }
 
 .img-contenitore-sx {
-    flex-basis: 50%;
+    flex-basis: 40%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -204,7 +204,7 @@ nav li:hover {
 }
 
 .img-contenitore-dx {
-    flex-basis: 50%;
+    flex-basis: 40%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
