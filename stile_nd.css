@@ -546,7 +546,7 @@ nav li:hover {
     #header-logo {width: 35em;}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 501px) and (max-width: 767px) {
     .titolo-gioco-dx, .titolo-gioco-sx, .testo-dx, .testo-sx {text-align: center;}
     .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.25em;}
     .testo-dx, .testo-sx {font-size: 1em;}
@@ -560,4 +560,23 @@ nav li:hover {
     #homemenu {flex-direction: column; padding: 1em;}
     #navbar {margin-top: 0.5em;}
     #header-logo {width: 30em;}
+}
+
+@media screen and (max-width: 500px) {
+    .titolo-gioco-dx, .titolo-gioco-sx, .testo-dx, .testo-sx {text-align: center;}
+    .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.25em;}
+    .testo-dx, .testo-sx {font-size: 1em;}
+    .card-giochi-dx, .card-giochi-sx, .img-contenitore-dx, .img-contenitore-sx {justify-content: center;}
+    .contenitore {margin: 1em; flex-direction: column; justify-content: center;}
+    .contenitore-reverse {flex-direction: column-reverse;}
+    hr {margin-top: 1em;}
+    #header-logo-ext {padding: 0 10px; width: 14em;}
+    nav li {font-size: 14pt; padding: 0 10px;}
+    nav ul {padding: 0;}
+    #homemenu {flex-direction: column; padding: 1em;}
+    #navbar {margin-top: 0.5em;}
+    #header-logo {width: 20em;}
+    #about {font-size: 1em;}
+    button {font-size: 12pt;}
+    .icone-giochi {width: 200px;}
 }
