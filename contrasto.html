@@ -10,40 +10,51 @@
    </head>
     
    <body>
-       
+     <div id="homemenu">
+        <a href="index.html"><img id="header-logo-ext" src="immagini/Logo_Bianco-Giallo_ext.png" alt="ND LOGO"></a>
+        <nav id="navbar">
+	        <ul>
+ 		        <a href="#"><li>Gioca</li></a>
+ 		        <a href="#"><li>Rivista</li></a>
+ 		        <a href="#"><li>About</li></a>
+	        </ul>
+        </nav>
+    </div>
+     <img src="immagini/Contrasto_icona.svg" class="icone-giochi-interni" alt="Icona Contrasto">
+     <h3 class="titolo-gioco-interno">GIOCO 2: IL CONTRASTO</h3>
+     <hr>  
      <p id="heading">Gioca con il contrasto tra testo e sfondo, scopri in che modo<br/>questo rapporto influenza la chiarezza del messaggio.</p>
-       
-     <br/><br/>
-       
+        
      <table id="text-box-contrasto" align="center" border="2px" bordercolor="#252525">
          <td id="text-content-contrasto">Ambarabà cì cì cò cò, tre civette sul comò<br/>
                                che facevano l'amore con la figlia del dottore.<br/>
                                Il dottore si ammalò,&nbsp;Ambarabà cì cì cò cò.</td>
      </table>
        
-     <br/><br/><br/><br/>
-       
-     <label id="label1-contrasto"><b>TESTO:</b></label> 
+     <div class="range-contenitore">       
+         <label id="label1-contrasto"><b>TESTO:</b></label> 
      
-     <input type="range" min="0" max="359" value="0" class="range-contrasto" id="range1-contrasto" onmousemove="changeTextColor()">  
-     <input type="range" min="0" max="100" value="0" class="range-contrasto" id="range2-contrasto" onmousemove="changeTextColor()">       
-     <input type="range" min="0" max="100" value="0" class="range-contrasto" id="range3-contrasto" onmousemove="changeTextColor()">
+         <input type="range" min="0" max="359" value="0" class="range-contrasto" id="range1-contrasto" onmousemove="changeTextColor()">  
+         <input type="range" min="0" max="100" value="0" class="range-contrasto" id="range2-contrasto" onmousemove="changeTextColor()">       
+         <input type="range" min="0" max="100" value="0" class="range-contrasto" id="range3-contrasto" onmousemove="changeTextColor()">
+     </div>
        
-     <br/><br/><br/>
-       
-     <label id="label2-contrasto"><b>SFONDO:</b></label> 
+     <div class="range-contenitore">
+         <label id="label2-contrasto"><b>SFONDO:</b></label> 
      
-     <input type="range" min="0" max="359" value="0" class="range-contrasto" id="range4-contrasto" onmousemove="changeBoxColor()">  
-     <input type="range" min="0" max="100" value="0" class="range-contrasto" id="range5-contrasto" onmousemove="changeBoxColor()">         
-     <input type="range" min="0" max="100" value="0" class="range-contrasto" id="range6-contrasto" onmousemove="changeBoxColor()">
+         <input type="range" min="0" max="359" value="0" class="range-contrasto" id="range4-contrasto" onmousemove="changeBoxColor()">  
+         <input type="range" min="0" max="100" value="0" class="range-contrasto" id="range5-contrasto" onmousemove="changeBoxColor()">         
+         <input type="range" min="0" max="100" value="0" class="range-contrasto" id="range6-contrasto" onmousemove="changeBoxColor()">
+     </div>
        
-     <br/><br/><br/>
-       
-     <label id="label3-contrasto">Tonalità</label>  
-     <label id="label4-contrasto">Saturazione</label>  
-     <label id="label5-contrasto">Luminosità</label>
-
-     <br>
+    <div class="range-contenitore">   
+         <label id="label3-contrasto">Tonalità</label>  
+         <label id="label4-contrasto">Saturazione</label>  
+         <label id="label5-contrasto">Luminosità</label>
+     </div>
+     
+     <button class="confirm-button" onclick="showResult()">CONFERMA</button>
+        
      <script>
                   
        function changeTextColor() {          

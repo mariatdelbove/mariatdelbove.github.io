@@ -10,10 +10,20 @@
    </head>
     
    <body>
-       
+     <div id="homemenu">
+        <a href="index.html"><img id="header-logo-ext" src="immagini/Logo_Bianco-Giallo_ext.png" alt="ND LOGO"></a>
+        <nav id="navbar">
+	        <ul>
+ 		        <a href="#"><li>Gioca</li></a>
+ 		        <a href="#"><li>Rivista</li></a>
+ 		        <a href="#"><li>About</li></a>
+	        </ul>
+        </nav>
+    </div>
+     <img src="immagini/Kerning_icona.svg" class="icone-giochi-interni" alt="Icona Kerning">
+     <h3 class="titolo-gioco-interno">GIOCO 4: IL KERNING</h3>
+     <hr>  
      <p id="heading">Muovi i cursori per spostare le lettere fino ad ottenere<br/>il risultato di kerning che ritieni più corretto.</p>
-       
-     <br/><br/>
        
      <table class="minimum" align="center" width="930px">
          <td id="letter-m1">M</td>
@@ -37,17 +47,15 @@
        </table>
       </div>
        
-     <br/><br/>
+     <div class="range-contenitore" id="range-contenitore-kerning">       
+         <input type="range" min="-30" max="130" value="0" class="range-kerning" id="range-i1" onmousemove="changePosition()">     
+         <input type="range" min="-180" max="80" value="0" class="range-kerning" id="range-n" onmousemove="changePosition()">
+         <input type="range" min="-75" max="175" value="0" class="range-kerning" id="range-i2" onmousemove="changePosition()">     
+         <input type="range" min="-160" max="60" value="0" class="range-kerning" id="range-m2" onmousemove="changePosition()">     
+         <input type="range" min="-25" max="125" value="0" class="range-kerning" id="range-u" onmousemove="changePosition()">
+     </div>
        
-     <input type="range" min="-30" max="130" value="0" class="range-kerning" id="range-i1" onmousemove="changePosition()">     
-     <input type="range" min="-180" max="80" value="0" class="range-kerning" id="range-n" onmousemove="changePosition()">
-     <input type="range" min="-75" max="175" value="0" class="range-kerning" id="range-i2" onmousemove="changePosition()">     
-     <input type="range" min="-160" max="60" value="0" class="range-kerning" id="range-m2" onmousemove="changePosition()">     
-     <input type="range" min="-25" max="125" value="0" class="range-kerning" id="range-u" onmousemove="changePosition()">
-
-     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-       
-     <button id="confirm" onclick="showResult()">CONFERMA</button>
+     <button id="kerning-confirm" onclick="showResult()">CONFERMA</button>
        
      <script>
          

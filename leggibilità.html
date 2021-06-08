@@ -9,10 +9,22 @@
     <title>Negative Design</title>
    </head>
     
-   <body>       
+   <body>
+     <div id="homemenu">
+        <a href="index.html"><img id="header-logo-ext" src="immagini/Logo_Bianco-Giallo_ext.png" alt="ND LOGO"></a>
+        <nav id="navbar">
+	        <ul>
+ 		        <a href="#"><li>Gioca</li></a>
+ 		        <a href="#"><li>Rivista</li></a>
+ 		        <a href="#"><li>About</li></a>
+	        </ul>
+        </nav>
+    </div>
+     
+     <img src="immagini/Leggibilità_icona.svg" class="icone-giochi-interni" alt="Icona Leggibilità">
+     <h3 class="titolo-gioco-interno">GIOCO 3: I FATTORI DELLA LEGGIBILITÀ</h3>
+     <hr>  
      <p id="heading">Cambia il tipo di carattere e di visualizzazione<br/>e trova la miglior soluzione di leggiblità.</p>
-       
-     <br/><br/>
        
      <table id="text-box-leggibilita" align="center" border="2px" bordercolor="#1d1d1d">
          <td id="text-content-leggibilita">Vedo un ragno nel suo regno<br/>
@@ -22,48 +34,50 @@
          </td>
      </table>
        
-     <br/><br/><br/><br/><br/>
-       
-     <label class="label-leggibilita"><b>FONT:</b></label> 
+     <div class="range-contenitore">  
+         <label class="label-leggibilita"><b>FONT:</b></label> 
      
-     <label class="container">Sans-serif
-       <input type="radio" name="group1" id="changeFont1" onclick="changeFontSansSerif()">
-       <span class="checkmark"></span>
-     </label>
-     <label class="container">Serif
-       <input type="radio" name="group1" id="changeFont2" onclick="changeFontSerif()">
-       <span class="checkmark"></span>
-     </label>
-     <label class="container">Monospaziato
-       <input type="radio" name="group1" id="changeFont3" onclick="changeFontMonospace()">
-       <span class="checkmark"></span>
-     </label>
-     <label class="container">Corsivo
-       <input type="radio" name="group1" id="changeFont4" onclick="changeFontCursive()">
-       <span class="checkmark"></span>
-     </label>
+         <label class="container">Sans-serif
+           <input type="radio" name="group1" id="changeFont1" onclick="changeFontSansSerif()">
+           <span class="checkmark"></span>
+         </label>
+         <label class="container">Serif
+           <input type="radio" name="group1" id="changeFont2" onclick="changeFontSerif()">
+           <span class="checkmark"></span>
+         </label>
+         <label class="container">Monospaziato
+           <input type="radio" name="group1" id="changeFont3" onclick="changeFontMonospace()">
+           <span class="checkmark"></span>
+         </label>
+         <label class="container">Corsivo
+           <input type="radio" name="group1" id="changeFont4" onclick="changeFontCursive()">
+           <span class="checkmark"></span>
+         </label>
+     </div>
        
-     <br/><br/><br/>
-       
-     <label class="label-leggibilita"><b>VISTA:</b></label> 
+     <div class="range-contenitore">
+         <label class="label-leggibilita"><b>VISTA:</b></label> 
      
-     <label class="container">Positiva
-       <input type="radio" name="group2" id="changeView1" onclick="changeViewPositive()">
-       <span class="checkmark"></span>
-     </label>
-     <label class="container">Colore positivo
-       <input type="radio" name="group2" id="changeView2" onclick="changeViewColorPositive()">
-       <span class="checkmark"></span>
-     </label>
-     <label class="container">Negativa
-       <input type="radio" name="group2" id="changeView3" onclick="changeViewNegative()">
-       <span class="checkmark"></span>
-     </label>
-     <label class="container">Colore negativo
-       <input type="radio" name="group2" id="changeView4" onclick="changeViewColorNegative()">
-       <span class="checkmark"></span>
-     </label>
-       
+         <label class="container">Positiva
+           <input type="radio" name="group2" id="changeView1" onclick="changeViewPositive()">
+           <span class="checkmark"></span>
+         </label>
+         <label class="container">Colore positivo
+           <input type="radio" name="group2" id="changeView2" onclick="changeViewColorPositive()">
+           <span class="checkmark"></span>
+         </label>
+         <label class="container">Negativa
+           <input type="radio" name="group2" id="changeView3" onclick="changeViewNegative()">
+           <span class="checkmark"></span>
+         </label>
+         <label class="container">Colore negativo
+           <input type="radio" name="group2" id="changeView4" onclick="changeViewColorNegative()">
+           <span class="checkmark"></span>
+         </label>
+        </div>
+      
+     <button class="confirm-button" onclick="showResult()">CONFERMA</button>
+        
      <script>
                   
        function changeFontSansSerif() {           
@@ -89,29 +103,29 @@
        function changeViewPositive() {
            var bianco = "#FFFCF5"
            var nero = "#1d1d1d"
-           document.body.querySelector("#text-box").style.backgroundColor = bianco
-           document.body.querySelector("#text-content").style.color = nero
+           document.body.querySelector("#text-box-leggibilita").style.backgroundColor = bianco
+           document.body.querySelector("#text-content-leggibilita").style.color = nero
        }
          
        function changeViewColorPositive() {
            var giallo = "#FFE000"
            var nero = "#1d1d1d"
-           document.body.querySelector("#text-box").style.backgroundColor = giallo
-           document.body.querySelector("#text-content").style.color = nero
+           document.body.querySelector("#text-box-leggibilita").style.backgroundColor = giallo
+           document.body.querySelector("#text-content-leggibilita").style.color = nero
        }
          
        function changeViewNegative() {
            var nero = "#1d1d1d"
            var bianco = "#FFFCF5"
-           document.body.querySelector("#text-box").style.backgroundColor = nero
-           document.body.querySelector("#text-content").style.color = bianco
+           document.body.querySelector("#text-box-leggibilita").style.backgroundColor = nero
+           document.body.querySelector("#text-content-leggibilita").style.color = bianco
        }
          
        function changeViewColorNegative() {
            var nero = "#1d1d1d"
            var giallo = "#FFE000"
-           document.body.querySelector("#text-box").style.backgroundColor = nero
-           document.body.querySelector("#text-content").style.color = giallo
+           document.body.querySelector("#text-box-leggibilita").style.backgroundColor = nero
+           document.body.querySelector("#text-content-leggibilita").style.color = giallo
        }
          
        function fontRandomizer() {

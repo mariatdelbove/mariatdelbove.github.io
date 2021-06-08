@@ -8,30 +8,42 @@
     <title>Negative Design</title>
    </head>
     
-   <body>       
+   <body>
+     <div id="homemenu">
+        <a href="index.html"><img id="header-logo-ext" src="immagini/Logo_Bianco-Giallo_ext.png" alt="ND LOGO"></a>
+        <nav id="navbar">
+	        <ul>
+ 		        <a href="#"><li>Gioca</li></a>
+ 		        <a href="#"><li>Rivista</li></a>
+ 		        <a href="#"><li>About</li></a>
+	        </ul>
+        </nav>
+    </div>       
+     <img src="immagini/Carattere_icona.svg" class="icone-giochi-interni" alt="Icona Carattere">
+     <h3 class="titolo-gioco-interno">GIOCO 1: I VALORI DEL PARAGRAFO</h3>
+     <hr>
      <p id="heading">Regola i parametri di giustezza, interlinea e corpo del paragrafo<br/>fino ad ottenere il miglior risultato di leggibilità.</p>
-       
-     <br/><br/>
        
      <table id="text-box-carattere" border="2px" bordercolor="#212121" background="transparent">
          <td id="text-content-carattere">Apelle, figlio di Apollo, fece una palla di pelle di pollo.
                                Tutti i pesci vennero a galla per vedere la palla di pelle di pollo,
                                fatta da Apelle, figlio di Apollo.</td>
      </table>
-       
-     <br/><br/><br/><br/>
-            
-     <input type="range" min="500" max="1100" value="700" class="range-carattere" id="range1-carattere" onmousemove="changeBoxWidth()">
-     <input type="range" min="10" max="40" value="15" class="range-carattere" id="range2-carattere" onmousemove="changeTextLineHeight()">  
-     <input type="range" min="8" max="25" value="18" class="range-carattere" id="range3-carattere" onmousemove="changeFontSize()">
-       
-     <br/><br/>
-       
-     <label id="label1-carattere" for="range1-carattere">Giustezza</label>  
-     <label id="label2-carattere" for="range2-carattere">Interlinea</label>  
-     <label id="label3-carattere" for="range3-carattere">Corpo</label>
 
-     <br>
+     <div class="range-contenitore">   
+         <input type="range" min="500" max="1100" value="700" class="range-carattere" id="range1-carattere" onmousemove="changeBoxWidth()">
+         <input type="range" min="10" max="40" value="15" class="range-carattere" id="range2-carattere" onmousemove="changeTextLineHeight()">  
+         <input type="range" min="8" max="25" value="18" class="range-carattere" id="range3-carattere" onmousemove="changeFontSize()">
+       
+         <br/><br/>
+       
+         <label id="label1-carattere" for="range1-carattere">Giustezza</label>  
+         <label id="label2-carattere" for="range2-carattere">Interlinea</label>  
+         <label id="label3-carattere" for="range3-carattere">Corpo</label>
+     </div>
+     
+     <button class="confirm-button" onclick="showResult()">CONFERMA</button>
+          
      <script>
          
        function changeBoxWidth() {
