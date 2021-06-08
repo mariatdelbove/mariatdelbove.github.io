@@ -32,7 +32,7 @@ body {
 }
 
 button {
-    background-color: var(--giallochiaro);
+    background-image: linear-gradient(to right, var(--giallochiaro) , var(--gialloscuro));
     border-radius: 50px;
     border: none;
     box-shadow: 0 0 0 1px var(--grigio);
@@ -54,7 +54,7 @@ button {
 
 #header-logo-ext {
     padding: 0 30px;
-    width: 20em;
+    width: 30em;
 }
 
 p#about {
@@ -67,14 +67,8 @@ p#about {
     margin-top: 30px;  
 }
 
-nav {
-    margin: 0 auto;
-    padding: 0 auto;
-}
-
 nav ul {
-    margin: 0 auto;
-    padding: 0 30px;
+    margin: 0 30px;
 }
 
 nav li {
@@ -98,14 +92,64 @@ a:link {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5em 3em;
-    background-color: var(--grigio);
+    padding: 2em;
+    background-image: linear-gradient(to right, var(--grigio), var(--nero));
 }
 
 #navbar {
     display:flex;
-    justify-content: flex-end;
-    align-content: center;  
+    justify-content: space-between;
+}
+
+.contenitore {    
+    margin: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-giochi-sx {    
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.card-giochi-dx {    
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: right;
+}
+
+.titolo-gioco-sx {
+    text-align: left;
+    margin: 0;
+    font-size: 2em;
+}
+
+.titolo-gioco-dx {
+    text-align: right;
+    margin: 0;
+    font-size: 2em;
+}
+
+.testo-sx {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.testo-dx {
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.icone-giochi {
+    width: 35%;
+    margin: 2em;
 }
 
 
