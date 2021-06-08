@@ -149,6 +149,14 @@ nav li:hover {
     align-items: center;
 }
 
+.contenitore-reverse {
+    margin: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .card-giochi-sx {    
     flex-basis: 50%;
     display: flex;
@@ -513,4 +521,38 @@ nav li:hover {
 #kerning-confirm {
     position: relative;
     top: -300px;
+}
+
+
+
+
+/* MEDIA QUERY */
+@media screen and (min-width: 1025px) and (max-width: 1420px) {
+    .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.5em;}
+    .testo-dx, .testo-sx {font-size: 1.05em;}
+    .contenitore, .contenitore-reverse {margin: 1em;}
+    hr {margin-top: 1em;}
+    #header-logo-ext {padding: 0 20px; width: 25em;}
+    nav li {font-size: 18pt;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.2em;}
+    .testo-dx, .testo-sx {font-size: 0.75em;}
+    .contenitore, .contenitore-reverse {margin: 1em;}
+    hr {margin-top: 1em;}
+    #header-logo-ext {padding: 0 10px; width: 16em;}
+    nav li {font-size: 14pt; padding: 0 20px;}
+}
+
+@media screen and (max-width: 767px) {
+    .titolo-gioco-dx, .titolo-gioco-sx, .testo-dx, .testo-sx {text-align: center;}
+    .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.25em;}
+    .testo-dx, .testo-sx {font-size: 1em;}
+    .card-giochi-dx, .card-giochi-sx, .img-contenitore-dx, .img-contenitore-sx {justify-content: center;}
+    .contenitore {margin: 1em; flex-direction: column; justify-content: center;}
+    .contenitore-reverse {flex-direction: column-reverse;}
+    hr {margin-top: 1em;}
+    #header-logo-ext {padding: 0 10px; width: 16em;}
+    nav li {font-size: 14pt; padding: 0 20px;}
 }
