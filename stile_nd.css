@@ -555,4 +555,7 @@ nav li:hover {
     hr {margin-top: 1em;}
     #header-logo-ext {padding: 0 10px; width: 16em;}
     nav li {font-size: 14pt; padding: 0 20px;}
+    nav ul {padding: 0;}
+    #homemenu {flex-direction: column; padding: 1em;}
+    #navbar {margin-top: 0.5em}
 }
