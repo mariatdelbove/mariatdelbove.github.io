@@ -31,9 +31,9 @@
      </table>
 
      <div class="range-contenitore">   
-         <input type="range" min="500" max="1100" value="700" class="range-carattere" id="range1-carattere" onmousemove="changeBoxWidth()">
-         <input type="range" min="10" max="40" value="15" class="range-carattere" id="range2-carattere" onmousemove="changeTextLineHeight()">  
-         <input type="range" min="8" max="25" value="18" class="range-carattere" id="range3-carattere" onmousemove="changeFontSize()">
+         <input type="range" min="500" max="1100" value="700" class="range-carattere" id="range1-carattere" onmousemove="changeBoxWidth()" ontouchmove="changeBoxWidth()">
+         <input type="range" min="10" max="40" value="15" class="range-carattere" id="range2-carattere" onmousemove="changeTextLineHeight()" ontouchmove="changeBoxWidth()">  
+         <input type="range" min="8" max="25" value="18" class="range-carattere" id="range3-carattere" onmousemove="changeFontSize()" ontouchmove="changeBoxWidth()">
        
          <br/><br/>
        
@@ -42,7 +42,7 @@
          <label id="label3-carattere" for="range3-carattere">Corpo</label>
      </div>
      
-     <a href="contrasto.html"><button class="confirm-button" onclick="showResult()">AVANTI</button></a>
+     <a href="contrasto.html"><button class="confirm-button" onclick="showResult()" ontouch="showResult()">AVANTI</button></a>
           
      <script>
          

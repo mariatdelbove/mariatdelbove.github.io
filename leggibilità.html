@@ -38,19 +38,19 @@
          <label class="label-leggibilita"><b>FONT:</b></label> 
      
          <label class="container">Sans-serif
-           <input type="radio" name="group1" id="changeFont1" onclick="changeFontSansSerif()">
+           <input type="radio" name="group1" id="changeFont1" onclick="changeFontSansSerif()" ontouch="changeFontSansSerif()">
            <span class="checkmark"></span>
          </label>
          <label class="container">Serif
-           <input type="radio" name="group1" id="changeFont2" onclick="changeFontSerif()">
+           <input type="radio" name="group1" id="changeFont2" onclick="changeFontSerif()" ontouch="changeFontSansSerif()">
            <span class="checkmark"></span>
          </label>
          <label class="container">Monospaziato
-           <input type="radio" name="group1" id="changeFont3" onclick="changeFontMonospace()">
+           <input type="radio" name="group1" id="changeFont3" onclick="changeFontMonospace()" ontouch="changeFontSansSerif()">
            <span class="checkmark"></span>
          </label>
          <label class="container">Corsivo
-           <input type="radio" name="group1" id="changeFont4" onclick="changeFontCursive()">
+           <input type="radio" name="group1" id="changeFont4" onclick="changeFontCursive()" ontouch="changeFontSansSerif()">
            <span class="checkmark"></span>
          </label>
      </div>
@@ -59,24 +59,24 @@
          <label class="label-leggibilita"><b>VISTA:</b></label> 
      
          <label class="container">Positiva
-           <input type="radio" name="group2" id="changeView1" onclick="changeViewPositive()">
+           <input type="radio" name="group2" id="changeView1" onclick="changeViewPositive()" ontouch="changeViewPositive()">
            <span class="checkmark"></span>
          </label>
          <label class="container">Colore positivo
-           <input type="radio" name="group2" id="changeView2" onclick="changeViewColorPositive()">
+           <input type="radio" name="group2" id="changeView2" onclick="changeViewColorPositive()" ontouch="changeViewPositive()">
            <span class="checkmark"></span>
          </label>
          <label class="container">Negativa
-           <input type="radio" name="group2" id="changeView3" onclick="changeViewNegative()">
+           <input type="radio" name="group2" id="changeView3" onclick="changeViewNegative()" ontouch="changeViewPositive()">
            <span class="checkmark"></span>
          </label>
          <label class="container">Colore negativo
-           <input type="radio" name="group2" id="changeView4" onclick="changeViewColorNegative()">
+           <input type="radio" name="group2" id="changeView4" onclick="changeViewColorNegative()" ontouch="changeViewPositive()">
            <span class="checkmark"></span>
          </label>
         </div>
       
-     <a href="kerning.html"><button class="confirm-button" onclick="showResult()">AVANTI</button></a>
+     <a href="kerning.html"><button class="confirm-button" onclick="showResult()" ontouch="showResult()">AVANTI</button></a>
         
      <script>
                   

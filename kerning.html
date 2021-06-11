@@ -48,14 +48,14 @@
       </div>
        
      <div class="range-contenitore" id="range-contenitore-kerning">       
-         <input type="range" min="-30" max="130" value="0" class="range-kerning" id="range-i1" onmousemove="changePosition()">     
-         <input type="range" min="-180" max="80" value="0" class="range-kerning" id="range-n" onmousemove="changePosition()">
-         <input type="range" min="-75" max="175" value="0" class="range-kerning" id="range-i2" onmousemove="changePosition()">     
-         <input type="range" min="-160" max="60" value="0" class="range-kerning" id="range-m2" onmousemove="changePosition()">     
-         <input type="range" min="-25" max="125" value="0" class="range-kerning" id="range-u" onmousemove="changePosition()">
+         <input type="range" min="-30" max="130" value="0" class="range-kerning" id="range-i1" onmousemove="changePosition()" ontouchmove="changePosition()">     
+         <input type="range" min="-180" max="80" value="0" class="range-kerning" id="range-n" onmousemove="changePosition()" ontouchmove="changePosition()">
+         <input type="range" min="-75" max="175" value="0" class="range-kerning" id="range-i2" onmousemove="changePosition()" ontouchmove="changePosition()">     
+         <input type="range" min="-160" max="60" value="0" class="range-kerning" id="range-m2" onmousemove="changePosition()" ontouchmove="changePosition()">     
+         <input type="range" min="-25" max="125" value="0" class="range-kerning" id="range-u" onmousemove="changePosition()" ontouchmove="changePosition()">
      </div>
        
-     <button id="kerning-confirm" onclick="showResult()">CONFERMA</button>
+     <button id="kerning-confirm" onclick="showResult()" ontouch="showResult()">CONFERMA</button>
        
      <script>
          
