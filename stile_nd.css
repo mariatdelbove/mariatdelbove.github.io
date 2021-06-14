@@ -298,11 +298,12 @@ nav li:hover {
 #text-box-contrasto {
     border: 2px;
     background-color: hsla(0, 0%, 100%, 1.00);
-    width: 50%;
+    width: 60%;
 }
 
 #text-content-contrasto {
-    font-size: 28pt;
+    font-size: 24pt;
+    line-height: 1.25;
     padding: 25px;
     position: relative;
     color: hsla(0, 0%, 0%, 1.00);
@@ -322,7 +323,7 @@ nav li:hover {
 
 #label3-contrasto {
     position: relative;
-    left: -116px;
+    left: -106px;
 }
 
 #label4-contrasto {
@@ -332,7 +333,7 @@ nav li:hover {
 
 #label5-contrasto {
     position: relative;
-    left: 207px;
+    left: 200px;
 }
 
 .range-contrasto {
@@ -534,6 +535,10 @@ nav li:hover {
     hr {margin-top: 1em;}
     #header-logo-ext {padding: 0 20px; width: 25em;}
     nav li {font-size: 18pt;}
+    
+    #label5-contrasto {left: 140px;}
+    #text-content-contrasto {font-size: 24pt; line-height: 1.35;}
+    table#text-box-contrasto {width: 70%;} 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -544,6 +549,15 @@ nav li:hover {
     #header-logo-ext {padding: 0 10px; width: 16em;}
     nav li {font-size: 14pt; padding: 0 20px;}
     #header-logo {width: 35em;}
+    
+    #heading {font-size: 1.5em; max-width: 90%; margin: 1em auto;}    
+    .confirm-button {margin: 1.25em auto;}
+    
+    #range1-contrasto, #range2-contrasto, #range3-contrasto, #range4-contrasto, #range5-contrasto, #range6-contrasto {margin-left: 20px; margin-right: 20px;}
+    #label3-contrasto {left: -50px;}
+    #label5-contrasto {left: 140px;}
+    td#text-content-contrasto {font-size: 20pt; line-height: 1.5;}
+    table#text-box-contrasto {width: 80%;}
 }
 
 @media screen and (min-width: 501px) and (max-width: 767px) {
@@ -561,7 +575,7 @@ nav li:hover {
     #navbar {margin-top: 0.5em;}
     #header-logo {width: 30em;}
     
-    #heading {font-size: 1.5em; max-width: 90%; margin: 1em auto;}    
+    #heading {font-size: 1.25em; max-width: 90%; margin: 1em auto;}    
     .confirm-button {margin: 1em auto;}
     
     #text-box-carattere {width: 90%;}
@@ -569,6 +583,13 @@ nav li:hover {
     .range-carattere {width: 25%;}
     #label1-carattere {left: -100px;}
     #label3-carattere {left: 90px;}
+    
+    #range1-contrasto, #range2-contrasto, #range3-contrasto, #range4-contrasto, #range5-contrasto, #range6-contrasto {margin-left: 15px; margin-right: 15px;}
+    .range-contrasto {width: 20%;}
+    #label3-contrasto {left: -15px;}
+    #label5-contrasto {left: 100px;}
+    td#text-content-contrasto {font-size: 14pt; line-height: 1.5;}
+    #text-box-contrasto {width: 90%;}
 }
 
 @media screen and (max-width: 500px) {
@@ -590,11 +611,20 @@ nav li:hover {
     .icone-giochi {width: 200px;}
     
     .titolo-gioco-interno {font-size: 1.2em;}
-    #heading {font-size: 1.35em; max-width: 90%; margin: 1em auto;}
+    #heading {font-size: 1.1em; max-width: 90%; margin: 1em auto;}
+    .confirm-button {margin: 1em auto;}
     
     #text-box-carattere {width: 90%;}
     #range1-carattere, #range2-carattere, #range3-carattere {margin-left: 15px; margin-right: 15px;}
     .range-carattere {width: 25%;}
     #label1-carattere {left: -80px;}
     #label3-carattere {left: 70px;}
+    
+    #range1-contrasto, #range2-contrasto, #range3-contrasto, #range4-contrasto, #range5-contrasto, #range6-contrasto {margin-left: 10px; margin-right: 10px;}
+    .range-contrasto {width: 20%;}
+    #label3-contrasto {left: 10px;}
+    #label5-contrasto {left: 80px;}
+    #text-content-contrasto {font-size: 18pt;}
+    td#text-content-contrasto {font-size: 12pt; line-height: 1.5;}
+    table#text-box-contrasto {width: 90%;}
 }
