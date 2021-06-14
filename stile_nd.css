@@ -560,6 +560,15 @@ nav li:hover {
     #homemenu {flex-direction: column; padding: 1em;}
     #navbar {margin-top: 0.5em;}
     #header-logo {width: 30em;}
+    
+    #heading {font-size: 1.5em; max-width: 90%; margin: 1em auto;}    
+    .confirm-button {margin: 1em auto;}
+    
+    #text-box-carattere {width: 90%;}
+    #range1-carattere, #range2-carattere, #range3-carattere {margin-left: 15px; margin-right: 15px;}
+    .range-carattere {width: 25%;}
+    #label1-carattere {left: -100px;}
+    #label3-carattere {left: 90px;}
 }
 
 @media screen and (max-width: 500px) {
@@ -579,4 +588,13 @@ nav li:hover {
     #about {font-size: 1em;}
     button {font-size: 12pt;}
     .icone-giochi {width: 200px;}
+    
+    .titolo-gioco-interno {font-size: 1.2em;}
+    #heading {font-size: 1.35em; max-width: 90%; margin: 1em auto;}
+    
+    #text-box-carattere {width: 90%;}
+    #range1-carattere, #range2-carattere, #range3-carattere {margin-left: 15px; margin-right: 15px;}
+    .range-carattere {width: 25%;}
+    #label1-carattere {left: -80px;}
+    #label3-carattere {left: 70px;}
 }

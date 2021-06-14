@@ -24,23 +24,24 @@
      <hr>
      <p id="heading">Regola i parametri di giustezza, interlinea e corpo del paragrafo<br/>fino ad ottenere il miglior risultato di leggibilità.</p>
        
-     <table id="text-box-carattere" border="2px" bordercolor="#212121" background="transparent">
-         <td id="text-content-carattere">Apelle, figlio di Apollo, fece una palla di pelle di pollo.
-                               Tutti i pesci vennero a galla per vedere la palla di pelle di pollo,
-                               fatta da Apelle, figlio di Apollo.</td>
-     </table>
 
      <div class="range-contenitore">   
-         <input type="range" min="500" max="1100" value="700" class="range-carattere" id="range1-carattere" onmousemove="changeBoxWidth()" ontouchmove="changeBoxWidth()">
+         <input type="range" min="15" max="99" value="70" class="range-carattere" id="range1-carattere" onmousemove="changeBoxWidth()" ontouchmove="changeBoxWidth()">
          <input type="range" min="10" max="40" value="15" class="range-carattere" id="range2-carattere" onmousemove="changeTextLineHeight()" ontouchmove="changeTextLineHeight()">  
-         <input type="range" min="8" max="25" value="18" class="range-carattere" id="range3-carattere" onmousemove="changeFontSize()" ontouchmove="changeFontSize()">
+         <input type="range" min="10" max="25" value="20" class="range-carattere" id="range3-carattere" onmousemove="changeFontSize()" ontouchmove="changeFontSize()">
        
          <br/><br/>
        
          <label id="label1-carattere" for="range1-carattere">Giustezza</label>  
          <label id="label2-carattere" for="range2-carattere">Interlinea</label>  
          <label id="label3-carattere" for="range3-carattere">Corpo</label>
-     </div>
+     </div>   
+       
+     <table id="text-box-carattere" border="2px" bordercolor="#212121" background="transparent">
+         <td id="text-content-carattere">Apelle, figlio di Apollo, fece una palla di pelle di pollo.
+                               Tutti i pesci vennero a galla per vedere la palla di pelle di pollo,
+                               fatta da Apelle, figlio di Apollo.</td>
+     </table>
      
      <a href="contrasto.html"><button class="confirm-button" onclick="showResult()" ontouch="showResult()">AVANTI</button></a>
           
@@ -49,7 +50,7 @@
        function changeBoxWidth() {
            boxWidth = document.body.querySelector("#range1-carattere").value;
            
-           boxWidthStr = boxWidth + "px";
+           boxWidthStr = boxWidth + "%";
            
            document.body.querySelector("#text-box-carattere").style.width = boxWidthStr;
        }
@@ -61,25 +62,25 @@
        }
          
        function changeFontSize() {
-           fontSize = document.body.querySelector("#range3-carattere").value;
+           fontSize = document.body.querySelector("#range3-carattere").value / 10;
            
-           fontSizeStr = fontSize + "pt";
+           fontSizeStr = fontSize + "em";
            
            document.body.querySelector("#text-content-carattere").style.fontSize = fontSizeStr;
        }
          
        function changeRangeValue() {
-           boxWidth = parseFloat(document.body.querySelector("#range1-carattere").value) + Math.floor(Math.random() * 400 - 200)
+           boxWidth = parseFloat(document.body.querySelector("#range1-carattere").value) + Math.floor(Math.random() * 99)
            document.body.querySelector("#range1-carattere").value = boxWidth
            
            lineHeight = parseFloat(document.body.querySelector("#range2-carattere").value) + Math.floor(Math.random() * 25 - 5)
            document.body.querySelector("#range2-carattere").value = lineHeight
            
-           fontSize = parseFloat(document.body.querySelector("#range3-carattere").value) + Math.floor(Math.random() * 10 - 5)
+           fontSize = parseFloat(document.body.querySelector("#range3-carattere").value) + Math.floor(Math.random() * 25)
            document.body.querySelector("#range3-carattere").value = fontSize
            
-           boxWidthStr = boxWidth + "px";
-           fontSizeStr = fontSize + "pt";
+           boxWidthStr = boxWidth + "%";
+           fontSizeStr = fontSize + "em";
            
            document.body.querySelector("#text-box-carattere").style.width = boxWidthStr;
            document.body.querySelector("#text-content-carattere").style.lineHeight = lineHeight;
