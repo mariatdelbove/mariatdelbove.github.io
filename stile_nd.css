@@ -457,6 +457,8 @@ nav li:hover {
 .minimum {
     font-size: 218.5px;
     position: relative;
+    width: 50%;
+    margin: 0 auto;
 }
 
 #letter-m1, #letter-i1, #letter-n, #letter-i2, #letter-m2, #letter-u, #letter-m3 {
@@ -473,7 +475,7 @@ nav li:hover {
 
 #range-i1, #range-n, #range-i2, #range-m2, #range-u {
     width: 100px;
-    margin-left: 0 50px;
+    margin: 0 10px;
     position: relative;
     top: -210px;
 }
@@ -538,7 +540,9 @@ nav li:hover {
     
     #label5-contrasto {left: 140px;}
     #text-content-contrasto {font-size: 24pt; line-height: 1.35;}
-    table#text-box-contrasto {width: 70%;} 
+    table#text-box-contrasto {width: 70%;}
+    
+    .minimum {width: 50%; margin-bottom: 60px; font-size: 180px;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -561,6 +565,9 @@ nav li:hover {
     
     .container {font-size: 1.1em; margin: 0 10px 12px 10px;}
     .label-leggibilita {font-size: 1.1em;}
+    
+    .minimum {width: 50%; margin-bottom: 60px; font-size: 160px;}
+    #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 80px; margin: 15px 5px 0 5px;}
 }
 
 @media screen and (min-width: 501px) and (max-width: 767px) {
@@ -599,6 +606,9 @@ nav li:hover {
     .checkmark {margin-left: 10px; top: -3.5px;}
     #text-content-leggibilita {font-size: 24pt; line-height: 1.5;}
     #text-box-leggibilita {width: 90%; margin-top: 55px;}
+    
+    .minimum {width: 50%; margin-top: 50px; margin-bottom: 80px; font-size: 100px;}
+    #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 60px; height: 10px; margin: 70px 2px 0 2px;}
 }
 
 @media screen and (max-width: 500px) {
@@ -642,4 +652,7 @@ nav li:hover {
     .checkmark {margin-left: 10px; top: -3.5px;}
     #text-content-leggibilita {font-size: 20pt; line-height: 1.5;}
     #text-box-leggibilita {width: 90%; margin-top: 55px;}
+    
+    .minimum {width: 50%; margin-top: 50px; margin-bottom: 80px; font-size: 90px;}
+    #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 60px; height: 10px; margin: 70px 2px 0 2px;}
 }
