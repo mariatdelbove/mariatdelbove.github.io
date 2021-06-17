@@ -15,6 +15,11 @@
 
 
 /* GENERAL */
+h3 {
+    color: var(--gialloscuro);
+    text-transform: uppercase;
+}
+
 #heading {
     font-size: 2em;
     font-weight: 800;
@@ -83,12 +88,69 @@ a:visited {
 a:hover {
     text-decoration: none;
     color: var(--giallochiaro);
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.icone-giochi:hover {
+    opacity: 0.93;
+    transition: 0.2s;
+}
+
+#footer {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: rgba(18,18,18,0.50);
+    padding: 1em
+}
+
+#footer-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 2em;
+    margin: 0 1em;
+}
+
+
+#footer-logo-ext {
+    padding: 0 30px;
+    width: 20em;
 }
 
 
 
 
 /* HOMEPAGE */
+#video-homepage {
+    width: 70%;
+    margin: 2.5em auto 1em auto;
+    border-radius: 5em;
+}
+
+h2 {
+    font-size: 1.75em;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: 600;
+    max-width: 70%;
+    margin: 1.25em auto 0 auto;
+}
+
+.highlight {
+    text-transform: none;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--gialloscuro)
+}
+
 #header-logo {
     width: 40em;
     padding: 5em 5%;
@@ -107,7 +169,8 @@ p#about {
 }
 
 #tasto-entra {
-    margin-top: 30px;  
+    margin-top: 30px;
+    
 }
 
 nav ul {
