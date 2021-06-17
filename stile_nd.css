@@ -594,10 +594,13 @@ nav li:hover {
 
 /* MEDIA QUERY */
 @media screen and (min-width: 1025px) and (max-width: 1420px) {
+    h2 {font-size: 1.3em;}
+    #freccia-giu {width: 2.25em;}
+    
     .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.5em;}
     .testo-dx, .testo-sx {font-size: 1.05em;}
     .contenitore, .contenitore-reverse {margin: 1em;}
-    hr {margin-top: 1em;}
+    hr {margin-top: 1em; width: 70%}
     #header-logo-ext {padding: 0 20px; width: 25em;}
     nav li {font-size: 18pt;}
     
@@ -607,13 +610,20 @@ nav li:hover {
     
     .minimum {width: 50%; margin-bottom: 60px; font-size: 180px;}
     #minimum-result {top: -273px;}
+    
+    #footer {padding: 0.75em;}
+    #copyright {font-size: 1em;}
+    #footer-navbar {justify-content: center; margin-left: -3.5em;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    h2 {font-size: 1.5em;}
+    #freccia-giu {width: 1.75em;}
+    
     .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.2em;}
     .testo-dx, .testo-sx {font-size: 0.75em;}
     .contenitore, .contenitore-reverse {margin: 1em;}
-    hr {margin-top: 1em;}
+    hr {margin-top: 1em; width: 60%}
     #header-logo-ext {padding: 0 10px; width: 16em;}
     nav li {font-size: 14pt; padding: 0 20px;}
     #header-logo {width: 35em;}
@@ -633,16 +643,24 @@ nav li:hover {
     .minimum {width: 50%; margin-bottom: 60px; font-size: 160px;}
     #minimum-result {top: -250px;}
     #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 80px; margin: 15px 5px 0 5px;}
+    
+    #footer {flex-direction: column; padding: 0.75em;}
+    #copyright {font-size: 1.25em; margin-bottom: 2em;}
+    #footer-navbar {justify-content: center;}
 }
 
 @media screen and (min-width: 501px) and (max-width: 767px) {
+    h2 {font-size: 1.1em;}
+    #freccia-giu {width: 1.75em;}
+    
     .titolo-gioco-dx, .titolo-gioco-sx, .testo-dx, .testo-sx {text-align: center;}
     .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.25em;}
     .testo-dx, .testo-sx {font-size: 1em;}
+    .card-giochi-dx, .card-giochi-sx {flex-direction: column;}
     .card-giochi-dx, .card-giochi-sx, .img-contenitore-dx, .img-contenitore-sx {justify-content: center;}
     .contenitore {margin: 1em; flex-direction: column; justify-content: center;}
     .contenitore-reverse {flex-direction: column-reverse;}
-    hr {margin-top: 1em;}
+    hr {margin-top: 1em; width: 70%}
     #header-logo-ext {padding: 0 10px; width: 16em;}
     nav li {font-size: 14pt; padding: 0 20px;}
     nav ul {padding: 0;}
@@ -675,12 +693,20 @@ nav li:hover {
     .minimum {width: 50%; margin-top: 50px; margin-bottom: 80px; font-size: 100px;}
     #minimum-result {top: -201px;}
     #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 60px; height: 10px; margin: 70px 2px 0 2px;}
+    
+    #footer {flex-direction: column;}
+    #copyright {font-size: 1em; margin-bottom: 2em;}
+    #footer-navbar {justify-content: center;}
 }
 
 @media screen and (max-width: 500px) {
+    h2 {font-size: 0.8em;}
+    #freccia-giu {width: 1.5em;}
+    
     .titolo-gioco-dx, .titolo-gioco-sx, .testo-dx, .testo-sx {text-align: center;}
     .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.25em;}
     .testo-dx, .testo-sx {font-size: 1em;}
+    .card-giochi-dx, .card-giochi-sx {flex-direction: column;}
     .card-giochi-dx, .card-giochi-sx, .img-contenitore-dx, .img-contenitore-sx {justify-content: center;}
     .contenitore {margin: 1em; flex-direction: column; justify-content: center;}
     .contenitore-reverse {flex-direction: column-reverse;}
@@ -723,4 +749,8 @@ nav li:hover {
     .minimum {width: 50%; margin-top: 50px; margin-bottom: 80px; font-size: 70px;}
     #minimum-result {top: -166px;}
     #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 60px; height: 8px; margin: 90px 2px 0 2px;}
+    
+    #footer {flex-direction: column;}
+    #copyright {font-size: 0.8em; margin-bottom: 2em;}
+    #footer-navbar {justify-content: center;}
 }
