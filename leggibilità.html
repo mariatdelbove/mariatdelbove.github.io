@@ -24,15 +24,9 @@
      <img src="immagini/Leggibilità_icona.svg" class="icone-giochi-interni" alt="Icona Leggibilità">
      <h3 class="titolo-gioco-interno">GIOCO 3: I FATTORI DELLA LEGGIBILITÀ</h3>
      <hr>  
-     <p id="heading">Cambia il tipo di carattere e di visualizzazione<br/>e trova la miglior soluzione di leggiblità.</p>
+     <p id="heading">Cambia il tipo di carattere e di visualizzazione<br/>e trova la miglior soluzione di leggibilità.</p>
        
-     <table id="text-box-leggibilita" align="center" border="2px" bordercolor="#1d1d1d">
-         <td id="text-content-leggibilita">Vedo un ragno nel suo regno<br/>
-                                           che lavora con impegno<br/>
-                                           e uno gnomo che fa il bagno<br/>
-                                           con un cigno nello stagno.<br/>
-         </td>
-     </table>
+     <br/>
        
      <div class="range-contenitore">  
          <label class="label-leggibilita"><b>FONT:</b></label> 
@@ -74,7 +68,15 @@
            <input type="radio" name="group2" id="changeView4" onclick="changeViewColorNegative()" ontouch="changeViewPositive()">
            <span class="checkmark"></span>
          </label>
-        </div>
+      </div>
+       
+     <table id="text-box-leggibilita" align="center" border="2px" bordercolor="#1d1d1d">
+         <td id="text-content-leggibilita">Vedo un ragno nel suo regno<br/>
+                                           che lavora con impegno<br/>
+                                           e uno gnomo che fa il bagno<br/>
+                                           con un cigno nello stagno.<br/>
+         </td>
+     </table>
       
      <a href="kerning.html"><button class="confirm-button" onclick="showResult()" ontouch="showResult()">AVANTI</button></a>
         
@@ -108,7 +110,7 @@
        }
          
        function changeViewColorPositive() {
-           var giallo = "#FFE000"
+           var giallo = "#FFC200"
            var nero = "#1d1d1d"
            document.body.querySelector("#text-box-leggibilita").style.backgroundColor = giallo
            document.body.querySelector("#text-content-leggibilita").style.color = nero
@@ -123,7 +125,7 @@
          
        function changeViewColorNegative() {
            var nero = "#1d1d1d"
-           var giallo = "#FFE000"
+           var giallo = "#FFC200"
            document.body.querySelector("#text-box-leggibilita").style.backgroundColor = nero
            document.body.querySelector("#text-content-leggibilita").style.color = giallo
        }
