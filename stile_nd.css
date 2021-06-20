@@ -283,6 +283,17 @@ nav li:hover {
 }
 
 
+
+
+/* ABOUT */
+.illustrazione-about {
+    width: 50%;
+    flex-basis: 70%;
+    margin: 2em;
+}
+
+
+
 /* CARATTERE */
 #text-box-carattere {
     margin: 0 auto;
