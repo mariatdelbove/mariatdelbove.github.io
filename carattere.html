@@ -42,7 +42,16 @@
                                fatta da Apelle, figlio di Apollo.</td>
      </table>
      
-     <a href="contrasto.html"><button class="confirm-button" onclick="showResult()" ontouch="showResult()">AVANTI</button></a>
+    <button onclick="showRules()" ontouch="showRules()" class="confirm-button">REGOLE</button> &nbsp
+    <a href="contrasto.html"><button class="confirm-button">AVANTI</button></a>
+       
+    <p id="rules">Come teoria vuole, nella formattazione di un testo dobbiamo tener conto di alcuni parametri e regole base. La <span class="highlight">giustezza</span> indica la larghezza di una casella di testo; l'<span class="highlight">interlinea</span> rappresenta lo spazio tra due righe di testo consecutive; il <span class="highlight">corpo</span> è invece il valore che indica la dimensione sel carattere. A questo punto possiamo trarre le seguenti conclusioni: se la giustezza è troppo ampia e il corpo del testo troppo piccolo, sarà molto difficile tenere il filo della lettura fino alla fine della frase. Allo stesso modo, se l'interlinea è troppo stretta o troppo larga, potrebbe essere difficoltoso distinguere due righe di testo o andare velocemente a capo con l'occhio.
+    <br/>
+    <br/>
+    Conoscevi il significato di questi parametri? Hai tenuto conto, anche istintivamente, di queste piccole regole? Se non è così, prova a <span class="highlight">rifare il gioco</span> e vedrai che la qualità della leggibilità migliorerà notevolmente. Se invece sei stato un genio e sei già soddisfatto del risultato, <span class="highlight">passa al prossimo gioco</span><i>!</i> <br/><br/>
+    </p>
+       
+    <br/>
      
     <div id="footer">
         <a href="homepage.html"><img id="footer-logo-ext" src="immagini/Logo_Bianco-Giallo_ext.png" alt="ND LOGO"></a>
@@ -97,8 +106,16 @@
            document.body.querySelector("#text-content-carattere").style.lineHeight = lineHeight;
            document.body.querySelector("#text-content-carattere").style.fontSize = fontSizeStr;
        }
+         
+       function showRules() {
+           if (document.body.querySelector("#rules").style.display == "none") {
+               document.body.querySelector("#rules").style.display = "block";
+           } else {
+               document.body.querySelector("#rules").style.display = "none";
+           }
+       }
        
-       window.onload = function() { changeRangeValue(); changeBoxWidth(); changeTextLineHeight(); changeFontSize(); }
+       window.onload = function() { changeRangeValue(); changeBoxWidth(); changeTextLineHeight(); changeFontSize(); showRules();}
        
      </script>
    </body>

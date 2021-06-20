@@ -46,6 +46,7 @@ button {
     font-weight: 600;
     color: var(--nero);
     padding: 15px 30px;
+    cursor: pointer;
 }
 
 .icone-giochi-interni {
@@ -125,7 +126,15 @@ html {
     width: 20em;
 }
 
+#rules {
+    font-size: 1.5em;
+    line-height: 1.5;
+    max-width: 70%;
+    margin: 0 auto;
+    display: none;
+}
 
+    
 
 
 /* HOMEPAGE */
@@ -595,9 +604,19 @@ nav li:hover {
     margin-bottom: 3em;
 }
 
-#kerning-confirm {
+.kerning-confirm {
     position: relative;
     top: -300px;
+}
+
+#kerning-rules {
+    font-size: 1.5em;
+    line-height: 1.5;
+    max-width: 70%;
+    margin: 0 auto -250px auto;
+    display: none;
+    position: relative;
+    top: -270px;
 }
 
 
