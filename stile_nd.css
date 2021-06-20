@@ -139,6 +139,21 @@ html {
     display: none;
 }
 
+#construction-page-ill {
+    width: 70%;
+    margin: 3em auto;
+}
+
+#construction-page-text {
+    font-size: 1.75em;
+    text-transform: none;
+    line-height: 1.5;
+    font-weight: 400;
+    max-width: 70%;
+    margin: 1.25em auto 0 auto;
+}
+
+
     
 
 
