@@ -646,8 +646,6 @@ nav li:hover {
     width: 80em;
     height: 48em;
     margin: 3em auto 1em auto;
-    border: 0.5em solid var(--bianco);
-    border-radius: 2em;
 }
 
 /* width 
