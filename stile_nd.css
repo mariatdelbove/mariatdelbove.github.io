@@ -21,6 +21,7 @@ h3 {
 }
 
 #heading {
+    margin-top: 2em;
     font-size: 2em;
     font-weight: 800;
     text-transform: uppercase;
@@ -47,6 +48,7 @@ button {
     color: var(--nero);
     padding: 15px 30px;
     cursor: pointer;
+    margin: 0 auto 1em auto;
 }
 
 button:hover {
@@ -62,7 +64,7 @@ button:hover {
 .titolo-gioco-interno {
     text-align: center;
     margin: 0;
-    font-size: 1.5em;
+    font-size: 2em;
     color: var(--gialloscuro);
 }
 
@@ -325,7 +327,7 @@ nav li:hover {
 
 /* CARATTERE */
 #text-box-carattere {
-    margin: 0 auto;
+    margin: 4em auto 1em auto;
     border: 2px;
     border-color: var(--giallochiaro);
     width: 700px;
@@ -401,12 +403,13 @@ nav li:hover {
 #text-box-contrasto {
     border: 2px;
     background-color: hsla(0, 0%, 100%, 1.00);
-    width: 70%;
+    width: 60%;
+    margin: 3em auto;
 }
 
 #text-content-contrasto {
     font-size: 30pt;
-    line-height: 1.25;
+    line-height: 1.75;
     padding: 25px;
     position: relative;
     color: hsla(0, 0%, 0%, 1.00);
@@ -488,6 +491,7 @@ nav li:hover {
      padding: 25px;
      position: relative;
      color: var(--nero);
+     line-height: 1.5;
 }
 
 .label-leggibilita {
@@ -674,9 +678,12 @@ nav li:hover {
 
 /* MEDIA QUERY */
 @media screen and (min-width: 1025px) and (max-width: 1420px) {
-    h2, #rules {font-size: 1.5em;}
+    h2, #rules, #kerning-rules {font-size: 1.5em;}
     #freccia-giu {width: 2.25em;}
     
+    .icone-giochi-interni {width: 30%; margin: 2em;}
+    .titolo-gioco-interno {font-size: 2em;}
+    #heading {margin: 1.5em auto;}
     .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.5em;}
     .testo-dx, .testo-sx {font-size: 1.05em;}
     .contenitore, .contenitore-reverse {margin: 1em;}
@@ -684,15 +691,31 @@ nav li:hover {
     #header-logo-ext {padding: 0 20px; width: 25em;}
     nav li {font-size: 18pt;}
     
-    #label5-contrasto {left: 140px;}
-    #text-content-contrasto {font-size: 24pt; line-height: 1.35;}
-    table#text-box-contrasto {width: 70%;}
+    .confirm-button {margin: 1.25em auto 1.5em auto;}
+    .kerning-confirm {margin: 1.25em auto 1.5em auto;}
+    
+    #text-box-carattere {margin-top: 4em; margin-bottom: 2em;}
+    #range1-carattere, #range2-carattere, #range3-carattere {margin-left: 25px; margin-right: 25px;}
+    .range-carattere {width: 8em;}
+    #label1-carattere {left: -100px;}
+    #label3-carattere {left: 90px;}
+    
+    #range1-contrasto, #range2-contrasto, #range3-contrasto, #range4-contrasto, #range5-contrasto, #range6-contrasto {width: 9em; margin-left: 40px; margin-right: 40px;}
+    #label3-contrasto {left: -75px;}
+    #label5-contrasto {left: 170px;}
+    td#text-content-contrasto {font-size: 23pt; line-height: 1.75;}
+    table#text-box-contrasto {width: 80%; margin: 4em auto;}
+    
+    .container {font-size: 1.1em; margin: 0 10px 12px 10px;}
+    .label-leggibilita {font-size: 1.25em;}
+    #text-content-leggibilita {font-size: 24pt; line-height: 1.5;}
+    #text-box-leggibilita {width: 60%; margin-top: 5em;}
     
     .minimum {width: 50%; margin-bottom: 60px; font-size: 180px;}
     #minimum-result {top: -273px;}
     
     #footer {padding: 0.75em;}
-    #copyright {font-size: 1em;}
+    #copyright {font-size: 0.8em;}
     #footer-navbar {justify-content: center; margin-left: -3.5em;}
     
     #rivista-epub {width: 50em; height: 30em; margin: 2.5em auto 0.5em auto;}
@@ -700,9 +723,10 @@ nav li:hover {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    h2, #rules {font-size: 1.5em;}
+    h2, #rules, #kerning-rules {font-size: 1.25em;}
     #freccia-giu {width: 1.75em;}
     
+    .icone-giochi-interni {width: 35%; margin: 2em;}
     .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.2em;}
     .testo-dx, .testo-sx {font-size: 0.75em;}
     .contenitore, .contenitore-reverse {margin: 1em;}
@@ -712,20 +736,29 @@ nav li:hover {
     #header-logo {width: 35em;}
     
     #heading {font-size: 1.5em; max-width: 90%; margin: 1em auto;}    
-    .confirm-button {margin: 1.25em auto; font-size: 1.25em; margin-bottom: 2em;}
+    .confirm-button {margin: 1.25em auto 2em auto; font-size: 1.25em;}
     
-    #range1-contrasto, #range2-contrasto, #range3-contrasto, #range4-contrasto, #range5-contrasto, #range6-contrasto {margin-left: 20px; margin-right: 20px;}
-    #label3-contrasto {left: -50px;}
-    #label5-contrasto {left: 140px;}
-    td#text-content-contrasto {font-size: 20pt; line-height: 1.5;}
-    table#text-box-contrasto {width: 80%;}
+    #text-box-carattere {margin-top: 4em; margin-bottom: 3em;}
+    #range1-carattere, #range2-carattere, #range3-carattere {margin-left: 25px; margin-right: 25px;}
+    .range-carattere {width: 8em;}
+    #label1-carattere {left: -100px;}
+    #label3-carattere {left: 90px;}
+    
+    #range1-contrasto, #range2-contrasto, #range3-contrasto, #range4-contrasto, #range5-contrasto, #range6-contrasto {width: 8em; margin-left: 20px; margin-right: 20px;}
+    #label3-contrasto {left: -25px;}
+    #label5-contrasto {left: 120px;}
+    td#text-content-contrasto {font-size: 18pt; line-height: 2.25;}
+    table#text-box-contrasto {width: 80%; margin: 3em auto;}
     
     .container {font-size: 1.1em; margin: 0 10px 12px 10px;}
     .label-leggibilita {font-size: 1.1em;}
+    #text-content-leggibilita {font-size: 22pt; line-height: 1.5;}
+    #text-box-leggibilita {width: 80%; margin-top: 55px;}
     
     .minimum {width: 50%; margin-bottom: 60px; font-size: 160px;}
     #minimum-result {top: -250px;}
-    #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 80px; margin: 15px 5px 0 5px;}
+    #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 80px; margin: 15px 7px 0 7px;}
+    .kerning-confirm {margin: 1.25em auto 2em auto; font-size: 1.25em;}
     
     #footer {flex-direction: column; padding: 0.75em;}
     #copyright {font-size: 1.25em; margin-bottom: 2em;}
@@ -736,9 +769,10 @@ nav li:hover {
 }
 
 @media screen and (min-width: 501px) and (max-width: 767px) {
-    h2, #rules {font-size: 1.1em;}
+    h2, #rules, #kerning-rules {font-size: 1.1em;}
     #freccia-giu {width: 1.75em;}
     
+    .icone-giochi-interni {width: 45%; margin: 2em;}
     .titolo-gioco-dx, .titolo-gioco-sx, .testo-dx, .testo-sx {text-align: center;}
     .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.25em;}
     .testo-dx, .testo-sx {font-size: 1em;}
@@ -755,30 +789,31 @@ nav li:hover {
     #header-logo {width: 30em;}
     
     #heading {font-size: 1.25em; max-width: 90%; margin: 1em auto;}    
-    .confirm-button {margin: 1em auto; font-size: 1em; margin-bottom: 2em;}
+    .confirm-button {margin: 1em auto 2.5em auto; font-size: 1.1em;}
     
-    #text-box-carattere {width: 90%;}
+    #text-box-carattere {width: 90%; margin-top: 1em; margin-bottom: 2em;}
     #range1-carattere, #range2-carattere, #range3-carattere {margin-left: 15px; margin-right: 15px;}
-    .range-carattere {width: 25%;}
-    #label1-carattere {left: -100px;}
-    #label3-carattere {left: 90px;}
+    .range-carattere {width: 8em;}
+    #label1-carattere {left: -80px;}
+    #label3-carattere {left: 70px;}
     
     #range1-contrasto, #range2-contrasto, #range3-contrasto, #range4-contrasto, #range5-contrasto, #range6-contrasto {margin-left: 15px; margin-right: 15px;}
-    .range-contrasto {width: 20%;}
-    #label3-contrasto {left: -15px;}
-    #label5-contrasto {left: 100px;}
-    td#text-content-contrasto {font-size: 14pt; line-height: 1.5;}
-    #text-box-contrasto {width: 90%;}
+    .range-contrasto {width: 8em;}
+    #label3-contrasto {left: -20px;}
+    #label5-contrasto {left: 110px;}
+    td#text-content-contrasto {font-size: 14pt; line-height: 2;}
+    #text-box-contrasto {width: 90%; margin: 3em auto;}
     
     .container {font-size: 0.8em; margin: 0 0.5px 12px 0.5px;}
-    .label-leggibilita {font-size: 1em; margin-left: 1px; margin-right: 5px;}
+    .label-leggibilita {font-size: 1em; margin-left: 1px; margin-right: 15px;}
     .checkmark {margin-left: 10px; top: -3.5px;}
-    #text-content-leggibilita {font-size: 24pt; line-height: 1.5;}
+    #text-content-leggibilita {font-size: 22pt; line-height: 1.5;}
     #text-box-leggibilita {width: 90%; margin-top: 55px;}
     
     .minimum {width: 50%; margin-top: 50px; margin-bottom: 80px; font-size: 100px;}
     #minimum-result {top: -201px;}
-    #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 60px; height: 10px; margin: 70px 2px 0 2px;}
+    #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 80px; height: 10px; margin: 80px 5px 0 5px;}
+    .kerning-confirm {margin: 1em auto; font-size: 1.1em;}
     
     #footer {flex-direction: column;}
     #copyright {font-size: 1em; margin-bottom: 2em;}
@@ -789,9 +824,10 @@ nav li:hover {
 }
 
 @media screen and (min-width: 321px) and (max-width: 500px) {
-    h2, #rules {font-size: 0.8em;}
+    h2, #rules, #kerning-rules {font-size: 0.8em;}
     #freccia-giu {width: 1.5em;}
     
+    .icone-giochi-interni {width: 50%; margin: 2em;}
     .titolo-gioco-dx, .titolo-gioco-sx, .testo-dx, .testo-sx {text-align: center;}
     .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.25em;}
     .testo-dx, .testo-sx {font-size: 1em;}
@@ -811,7 +847,7 @@ nav li:hover {
     
     .titolo-gioco-interno {font-size: 1.2em;}
     #heading {font-size: 1.1em; max-width: 90%; margin: 1em auto;}
-    .confirm-button {margin: 1em auto; font-size: 0.75em; margin-bottom: 3em; padding: 1em 1.75em}
+    .confirm-button {margin: 1em auto; font-size: 0.8em; margin-bottom: 3em; padding: 1em 1.75em}
     
     #text-box-carattere {width: 90%;}
     #text-content-carattere {font-size: 1.2em}
@@ -821,22 +857,25 @@ nav li:hover {
     #label3-carattere {left: 35px;}
     
     #range1-contrasto, #range2-contrasto, #range3-contrasto, #range4-contrasto, #range5-contrasto, #range6-contrasto {margin-left: 5px; margin-right: 5px; margin-top: 12px;}
-    .range-contrasto {width: 20%;}
-    #label3-contrasto {left: 30px;}
-    #label5-contrasto {left: 60px;}
-    #text-content-contrasto {font-size: 10pt;}
-    td#text-content-contrasto {font-size: 10pt; line-height: 2;}
-    table#text-box-contrasto {width: 90%; margin-top: 2em;}
+    .range-contrasto {width: 20%; height: 0.75em;}
+    #label1-contrasto, #label2-contrasto {font-size: 0.8em;}
+    #label3-contrasto {left: 20px; font-size: 0.8em;}
+    #label4-contrasto {font-size: 0.8em; left: 42px;}
+    #label5-contrasto {left: 52px; font-size: 0.8em;}
+    #text-content-contrasto {font-size: 9pt;}
+    td#text-content-contrasto {font-size: 9pt; line-height: 2;}
+    table#text-box-contrasto {width: 95%; margin-top: 2em;}
     
-    .container {font-size: 0.5em; margin: 0 0.5px 6px 0.5px;}
-    .label-leggibilita {font-size: 0.5em; margin-left: 0; margin-right: 1px;}
-    .checkmark {width: 15px; height: 15px; margin-left: 15px; top: -1.5px;}
-    #text-content-leggibilita {font-size: 16pt; line-height: 1.5;}
-    #text-box-leggibilita {width: 90%; margin-top: 0; margin-bottom: 15px;}
+    .container {font-size: 0.45em; margin: 0 0.5px 6px 0.5px;}
+    .label-leggibilita {font-size: 0.5em; margin-left: -5px; margin-right: -15px;}
+    .checkmark {width: 10px; height: 10px; margin-left: 20px; top: -1px;}
+    #text-content-leggibilita {font-size: 14.5pt; line-height: 1.75;}
+    #text-box-leggibilita {width: 95%; margin-top: 0; margin-bottom: 25px;}
     
-    .minimum {width: 50%; margin-top: 50px; margin-bottom: 80px; font-size: 70px;}
-    #minimum-result {top: -166px;}
-    #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 60px; height: 8px; margin: 90px 2px 0 2px;}
+    .minimum {width: 50%; margin-top: 50px; margin-bottom: 80px; font-size: 65px;}
+    #minimum-result {top: -160px;}
+    #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 55px; height: 8px; margin: 90px 2px 0 2px;}
+    .kerning-confirm {margin: 0 auto; font-size: 0.8em; padding: 1em 1.75em}
     
     #footer {flex-direction: column;}
     #copyright {font-size: 0.8em; margin-bottom: 2em;}
@@ -847,10 +886,14 @@ nav li:hover {
 }
 
 @media screen and (max-width: 320px) {
-    h2, rules {font-size: 0.7em;}
+    h2, #rules, #kerning-rules {font-size: 0.75em;}
     #freccia-giu {width: 1.25em;}
     
+    .icone-giochi-interni  {width: 50%; margin: 2em;}
     .titolo-gioco-dx, .titolo-gioco-sx, .testo-dx, .testo-sx {text-align: center;}
+    .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.25em;}
+    .testo-dx, .testo-sx {font-size: 1em;}
+    .card-giochi-dx, .card-giochi-sx {flex-direction: column;}.titolo-gioco-dx, .titolo-gioco-sx, .testo-dx, .testo-sx {text-align: center;}
     .titolo-gioco-dx, .titolo-gioco-sx {font-size: 1.25em;}
     .testo-dx, .testo-sx {font-size: 0.75em;}
     .card-giochi-dx, .card-giochi-sx {flex-direction: column;}
@@ -866,13 +909,12 @@ nav li:hover {
     #header-logo {width: 20em;}
     #about {font-size: 1em;}
     .icone-giochi {width: 200px;}
-    #rules {font-size: 0.8em;}
     
     .titolo-gioco-interno {font-size: 1.2em;}
     #heading {font-size: 0.8em; max-width: 90%; margin: 1em auto;}
-    .confirm-button {margin: 1em auto; font-size: 0.75em; margin-bottom: 3em; padding: 1em 1.75em}
+    .confirm-button {margin: 1em auto; font-size: 0.75em; margin-bottom: 3em; padding: 1em 1.75em;}
     
-    #text-box-carattere {width: 90%;}
+    #text-box-carattere {width: 90%; margin-bottom: 1.5em;}
     #text-content-carattere {font-size: 1.2em}
     #range1-carattere, #range2-carattere, #range3-carattere {margin-left: 15px; margin-right: 15px;}
     .range-carattere {width: 20%;}
@@ -880,23 +922,26 @@ nav li:hover {
     #label3-carattere {left: 35px;}
     
     #range1-contrasto, #range2-contrasto, #range3-contrasto, #range4-contrasto, #range5-contrasto, #range6-contrasto {margin-left: 5px; margin-right: 5px; margin-top: 12px;}
-    .range-contrasto {width: 20%;}
-    #label3-contrasto {left: 30px; font-size: 0.8em;}
-    #label4-contrasto {font-size: 0.8em;}
-    #label5-contrasto {left: 60px; font-size: 0.8em;}
-    #text-content-contrasto {font-size: 10pt;}
-    td#text-content-contrasto {font-size: 10pt; line-height: 2;}
-    table#text-box-contrasto {width: 90%; margin-top: 2em;}
+    .range-contrasto {width: 20%; height: 0.75em;}
+    #label1-contrasto, #label2-contrasto {font-size: 0.8em;}
+    #label3-contrasto {left: 25px; font-size: 0.8em;}
+    #label4-contrasto {font-size: 0.8em; left: 42px;}
+    #label5-contrasto {left: 52px; font-size: 0.8em;}
+    #text-content-contrasto {font-size: 9pt;}
+    td#text-content-contrasto {font-size: 9pt; line-height: 2;}
+    table#text-box-contrasto {width: 95%; margin-top: 2em;}
     
     .container {font-size: 0.5em; margin: 0 -5px 6px -2px;}
     .label-leggibilita {font-size: 0.5em; margin-left: -5px; margin-right: -15px;}
-    .checkmark {width: 10px; height: 10px; margin-left: 20px; top: -1.5px;}
-    #text-content-leggibilita {font-size: 16pt; line-height: 1.5;}
-    #text-box-leggibilita {width: 90%; margin-top: 0; margin-bottom: 15px;}
+    .checkmark {width: 10px; height: 10px; margin-left: 20px; top: -1px;}
+    #text-content-leggibilita {font-size: 14pt; line-height: 1.75;}
+    #text-box-leggibilita {width: 95%; margin-top: 0; margin-bottom: 15px;}
     
-    .minimum {width: 50%; margin-top: 50px; margin-bottom: 80px; font-size: 70px;}
-    #minimum-result {top: -166px;}
-    #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 50px; height: 6px; margin: 100px 5px 0 5px;}
+    .minimum {width: 50%; margin-top: 50px; margin-bottom: 80px; font-size: 60px;}
+    #minimum-result {top: -153px;}
+    #range-i1, #range-n, #range-i2, #range-m2, #range-u { width: 45px; height: 6px; margin: 100px 5px 0 5px;}
+    .range-kerning::-webkit-slider-thumb, .range-kerning::-moz-range-thumb {width: 15px; height: 15px;}
+    .kerning-confirm {margin: -2em auto; font-size: 0.75em; padding: 1em 1.75em;}
     
     #footer {flex-direction: column;}
     #copyright {font-size: 0.7em; margin-bottom: 2em;}
